@@ -9,6 +9,11 @@
   </head>
 
   <body>
+    <div class="topnav">
+      <%= link_to "All Customers", root_path %>
+      <%= link_to "Alphabetized Customers", alphabetized_customers_path %>
+      <%= link_to "Customers without emails", missing_email_customers_path %>
+    </div>
     <%= yield %>
   </body>
 </html>
